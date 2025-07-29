@@ -18,15 +18,15 @@ Este proyecto está **dockerizado** y listo para usarse como parte de un **porta
 
 ## 📦 Estructura del proyecto
 plant-care-pp/
-├── app/ # Controladores y modelos (MVC)
-├── config/ # Configuración general
-├── db/ # Script SQL de inicialización
-├── db_data/ # Volumen persistente de MySQL (ignorado en Git)
-├── index.php # Punto de entrada principal
-├── Dockerfile # Imagen PHP + Apache
-├── docker-compose.yml # Orquestación de servicios Docker
-├── .env # Variables de entorno (no se sube)
-├── README.md # Documentación del proyecto
+app/ # Controladores y modelos (MVC)
+config/ # Configuración general
+db/ # Script SQL de inicialización
+db_data/ # Volumen persistente de MySQL (ignorado en Git)
+index.php # Punto de entrada principal
+Dockerfile # Imagen PHP + Apache
+docker-compose.yml # Orquestación de servicios Docker
+.env # Variables de entorno (no se sube)
+README.md # Documentación del proyecto
 
 ---
 
