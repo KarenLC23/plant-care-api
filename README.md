@@ -17,7 +17,7 @@ Este proyecto está **dockerizado** y listo para usarse como parte de un **porta
 ---
 
 ## 📦 Estructura del proyecto
-- plant-care-pp/
+plant-care-pp/
 - app/ # Controladores y modelos (MVC)
 - config/ # Configuración general
 - db/ # Script SQL de inicialización
