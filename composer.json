@@ -1,0 +1,6 @@
+{
+    "require": {
+        "proesio/pipe": "^5.1",
+        "firebase/php-jwt": "^6.10"
+    }
+}
