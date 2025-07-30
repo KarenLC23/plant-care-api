@@ -7,7 +7,7 @@ RUN a2enmod rewrite
 # 3. Instalar extensiones PHP necesarias para MySQL
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 
-# 4. Establecer la zona horaria (opcional)
+# 4. Establecer la zona horaria (para logs)
 ENV TZ=America/Bogota
 
 # 5. Instalar Composer (copiándolo desde la imagen oficial de Composer)
@@ -16,8 +16,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # 6. Definir el directorio de trabajo por defecto dentro del contenedor
 WORKDIR /var/www/html
 
-# 7. (Opcional) Copiar el código si no usas volumes en docker-compose
-# COPY ./api/ /var/www/html/
+# 7. Copiar todo el código del proyecto al contenedor
+COPY . /var/www/html/
 
-# 8. (Opcional) Establecer permisos si tu app lo necesita
+# 8. Establecer permisos si tu app lo necesita
 # RUN chown -R www-data:www-data /var/www/html
