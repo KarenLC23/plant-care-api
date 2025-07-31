@@ -1,5 +1,5 @@
 # Imagen base con PHP y Apache
-FROM php:8.0.0-apache
+FROM php:8.2-apache
 
 # Activar mod_rewrite para URLs amigables
 RUN a2enmod rewrite
