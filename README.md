@@ -105,6 +105,23 @@ Además, este proyecto incluye otros módulos completamente funcionales:
 📌 Puedes explorar los endpoints adicionales directamente en el código fuente o probarlos desde Postman.
 
 
+
+📦 CI/CD Automatizado con GitHub Actions
+Este proyecto incluye un pipeline de integración continua que realiza:
+
+✅ Análisis de sintaxis (Lint) para todo el código PHP.
+
+🐳 Construcción automática de la imagen Docker.
+
+🚀 Publicación automática a DockerHub bajo: kldevops/api-plantas:latest.
+
+El archivo de configuración del pipeline se encuentra en:
+.github/workflows/docker-workflow.yml
+
+Puedes ver la imagen publicada aquí:
+🔗 https://hub.docker.com/r/kldevops/api-plantas
+
+
 🧰 ¿Por qué es un buen portafolio DevOps?
 
 ✅ Dockeriza el backend, la base de datos y phpMyAdmin
