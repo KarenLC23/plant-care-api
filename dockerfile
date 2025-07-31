@@ -17,7 +17,16 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 WORKDIR /var/www/html
 
 # 7. Copiar todo el código del proyecto al contenedor
-COPY . /var/www/html/
+#COPY . /var/www/html/
 
-# 8. Establecer permisos si tu app lo necesita
+# 8. Copiar composer.json y composer.lock (importante para cache)
+COPY composer.json composer.lock ./
+
+# 9. Instalar dependencias
+RUN composer install
+
+# 10. Copiar todo el código (incluyendo app/, config/, index.php, etc.)
+COPY . .
+
+# 11. Establecer permisos si tu app lo necesita
 # RUN chown -R www-data:www-data /var/www/html
