@@ -87,7 +87,7 @@ phpMyAdmin: http://localhost:8094 (user: root, pass: 12345)
 | GET    | `care-getById&id=1` | Obtener cuidado específico por ID |
 
 
-🧩 Otros módulos disponibles
+🧩 Otros módulos disponibles 
 Además, este proyecto incluye otros módulos completamente funcionales:
 
 👤 Usuarios y autenticación
