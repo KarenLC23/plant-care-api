@@ -16,7 +16,7 @@ Este proyecto está **dockerizado** y listo para usarse como parte de un **porta
 
 ---
 
-## 📦 Estructura del proyecto
+## 📦 Estructura del proyecto 
 
 plant-care-pp/
 - app/ # Controladores y modelos (MVC)
